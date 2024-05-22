@@ -22,7 +22,7 @@ public class Stacks {
 //        값 삭제
 //        값이 없을 때까지 순회
         while (!intStack.isEmpty()){
-            System.out.println(intStack.pop());
+            System.out.println(intStack.pop()); // 제일 마지막으로 들어간 값 순서대로 삭제 3, 2, 1
         }
 
         intStack.push(1);
