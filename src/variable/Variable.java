@@ -1,3 +1,5 @@
+package variable;
+
 public class Variable {
     public static void main(String[] args){
         //      변수 선언 및 초기화
@@ -79,5 +81,7 @@ public class Variable {
 
 //        굳이 래퍼 클래스를 사용하는 이유
 //        클래스는 객체지향 언어인 Java의 핵심기능이며 객체로 관리하면 객체지향의 많은 기능들을 사용 가능
+
+//        숫
     }
 }
