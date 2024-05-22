@@ -47,5 +47,37 @@ public class Variable {
 
         float myFloat = 12.345f;
         double myDouble = 345.6789f;
+        
+//        참조형 변수
+//        문자열 변수 : String
+//        "HelloWorld" 같은 긴 문장을 저장
+        String MyString = "Hello World";
+
+//        Object, Array, List...
+//        객체, 배열, 리스트와 같은 단일 저장공간에 담을 수 없는 값을 저장
+        int[] myObject = {1,2,3};
+
+//        래퍼 클래스 변수 (Wrapper Class)
+//        기본형 변수를 클래스로 감싸는 변수
+//        기본 타입에서 래퍼 클래스 변수로 변수를 감싸는 것을 "박싱" 이라고 부르며
+//        래퍼 클래스 변수를 기본 타입 변수로 가져오는 것을 "언박싱" 이라고 일컫음
+//        기본 타입 | 래퍼 클래스
+//        byte       Byte
+//        short      Short
+//        int        Integer
+//        long       Long
+//        float      Float
+//        double     Double
+//        char       Character
+//        boolean    Boolean
+
+//        박싱
+//        Integer 래퍼 클래스 num 에 21의 값을 저장
+        int num = 21;
+        Integer boxingNum = new Integer(num);
+        System.out.println((boxingNum));
+
+//        굳이 래퍼 클래스를 사용하는 이유
+//        클래스는 객체지향 언어인 Java의 핵심기능이며 객체로 관리하면 객체지향의 많은 기능들을 사용 가능
     }
 }
