@@ -41,5 +41,56 @@ public class Array {
 //        배열 값 초기화
         Arrays.fill(intArray3,0); // {0, 0, 0, 0, 0}
         System.out.println(intArray3[0]); // 0
+
+//        다차원 배열
+//        방법 1. 중괄호를 사용해 선언과 동시에 초기화
+        int[][] myArray = {
+                {1,2,3},
+                {4,5,6}
+        };
+
+//        방법 2. 선언 이후 반복문을 통해 초기화
+        int[][] myArray2 = new int[2][3];
+
+        for (int i=0; i<myArray2.length;i++){
+            for (int k=0; k<myArray2[i].length;k++){
+                myArray2[i][k] = 0;
+            }
+        }
+
+//        가변 배열
+//        길이가 정해져있지 않은 배열 선언
+        int[][] myArray3 = new int[3][];
+
+//        배열의 원소마다 각각 다른 크기로 지정 가능
+        myArray3[0] = new int[2];
+        myArray3[1] = new int[3];
+        myArray3[2] = new int[4];
+
+//        중괄호를 통해 초기화를 해버릴 때도 가능
+        int[][] myArray4 = {
+                {10,20},
+                {10, 20, 30, 40},
+                {10}
+        };
+
+//        3차원 배열 형태
+        int [][][] multyArray = {{1, 2}, {3,4}, {{5, 6}, {7, 8}}};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
