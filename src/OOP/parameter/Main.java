@@ -20,4 +20,4 @@ public class Main {
         System.out.println("carInstanceTire.company = " + carInstanceTire.company);
     }
 
-}"
+}
