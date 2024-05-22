@@ -10,21 +10,25 @@ public class Car {
 //        Car class 만들기
 
 //        필드 정의
+//    클래스에 필드를 정의했다고 해서 바로 사용할 수 있는 것이 아니다. (인스턴스화)
+//    클래스는 설계도일 뿐 실제로 필드의 데이터를 가지고 있는 것은 객체이다.
+//    객체를 생성한 후에 필드를 사용 가능하다.
+
 //        고유 데이터 정의
         String company;
-        String model;
+        String model = "GV80";
         String color;
         double price;
 
 //        상태 데이터 정의
         double speed;
         char gear;
-        boolean lights;
+        boolean lights = true;
 
-//        객체 데이터 정의
-        Tire tire;
-        Door door;
-        Handle handle;
+//        객체 데이터 정의 인스턴스화
+        Tire tire = new Tire();
+        Door door = new Door();
+        Handle handle = new Handle();
 
 //        생성자 정의
 //        처음 객체가 생성될 때 (instance화 될 때)
@@ -34,7 +38,9 @@ public class Car {
         }
 
 //        메서드 정의
-        double gasPedal(double kmh) {
+//    내부 접근 - 객체 내부 메서드에서 내부 필드에 접근
+        double gasPedal(double kmh,char type) {
+            changeGear(type); // 가속도 페달을 밟으면 자동으로 기어가 변하도록
             speed = kmh;
             return speed;
         }
@@ -56,4 +62,11 @@ public class Car {
         void horn() {
             System.out.println("boom");
         }
+
+//        자동차 속도 ... 가변길이 메서드
+    void carSpeed(double ... speeds) {
+            for(double v : speeds){
+                System.out.println("v = " + v);
+            }
+    }
 }
